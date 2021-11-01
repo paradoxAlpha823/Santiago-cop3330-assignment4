@@ -1,0 +1,26 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class HelloApplication
+class ListData
+class ItemData
+class ItemController
+class ListController
+
+HelloApplication : main (launch)
+ListController : initialize (button and database actions)
+ItemController : initialize (button and database actions)
+ListData : listData (contains and manages list data)
+ItemData : itemData (contains and manages item data)
+
+HelloApplication -> ListController: launch gui page
+ListController -> ItemController: if edit list button is selected
+ListController -> ListData: storage setup/action
+ListData -> ListController: data displayed
+ItemController -> ItemData: storage setup/action
+ItemData -> ItemController: data displayed
+
+
+ItemData --|> ListData : is partially dependent on
+
+@enduml

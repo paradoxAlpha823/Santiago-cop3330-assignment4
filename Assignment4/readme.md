@@ -3,13 +3,21 @@ ToDo List Program
 
 Quick Button Functions
 ------------------------
+
 Add: Adds item
+
 Complete: Marks item complete
+
 Delete: Deletes selected item
+
 DelAll: Clears table
+
 Load: Loads saved list
+
 Save: Saves current list
+
 Show Done: Displays only marked items
+
 Show Not Done: Displays only unmarked items
 
 
